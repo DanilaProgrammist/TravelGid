@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".getBudget"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80sp"
+            android:layout_marginTop="40sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Введите ваш бюджет"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/minBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainText"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="60sp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="От"
+            android:inputType="textPersonName"
+            android:textColor="#191111"
+            android:textColorHint="#918A8A" />
+
+        <EditText
+            android:id="@+id/maxBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/minBudget"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="60sp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="До"
+            android:inputType="textPersonName"
+            android:textColor="#191111"
+            android:textColorHint="#918A8A" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/maxBudget"
+            android:text="Далее" />
+    </RelativeLayout>
+</LinearLayout>
